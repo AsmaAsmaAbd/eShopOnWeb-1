@@ -30,3 +30,9 @@ steps:
       projects: 'test/Unit Tests'
       testRunTitle: 'unit test'
 
+
+- task: DotNetCoreCLI@2
+  inputs:
+      command: 'test'
+      projects: 'test/IntegrationTests'
+      testRunTitle: 'Integration test'
