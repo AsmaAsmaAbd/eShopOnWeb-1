@@ -27,12 +27,12 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
       command: 'test'
-      projects: 'test/Unit Tests'
+      projects: 'test/Unit Tests/*.csprog'
       testRunTitle: 'unit test'
 
 
 - task: DotNetCoreCLI@2
   inputs:
       command: 'test'
-      projects: 'test/IntegrationTests'
+      projects: 'test/IntegrationTests/*.csprog'
       testRunTitle: 'Integration test'
