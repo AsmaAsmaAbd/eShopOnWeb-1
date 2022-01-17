@@ -24,3 +24,9 @@ steps:
 - script: dotnet build --configuration $(buildConfiguration)  eShopOnWeb.sln
   displayName: 'dotnet build $(buildConfiguration) eShopOnWeb.sln' 
 
+- task: DotNetCoreCLI@2
+  inputs:
+      command: 'test'
+      projects: 'test/Unit Tests'
+      testRunTitle: 'unit test'
+
