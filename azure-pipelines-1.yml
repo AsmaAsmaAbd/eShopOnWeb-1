@@ -29,6 +29,7 @@ steps:
       command: 'test'
       projects: 'test/Unit Tests/*.csprog'
       testRunTitle: 'unit test'
+      arguments: '--configuration $(buildConfiguration)' # Update this to match your need
 
 
 - task: DotNetCoreCLI@2
